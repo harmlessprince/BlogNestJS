@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Install Dependnciesss') {
+      steps {
+        sh 'npm install'
+      }
+    }
+
   }
 }
