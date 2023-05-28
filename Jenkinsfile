@@ -8,6 +8,12 @@ pipeline {
     }
 
     stage('Install Dependnciesss') {
+      agent {
+        node {
+          label 'use npm'
+        }
+
+      }
       steps {
         sh 'npm install'
       }
